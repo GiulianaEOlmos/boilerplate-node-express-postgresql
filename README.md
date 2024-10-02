@@ -10,7 +10,7 @@ Follow these instructions to get the project up and running on your local machin
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [Docker](https://www.docker.com/get-started)
-- [PostgreSQL] (https://www.postgresql.org/download/)
+- [PostgreSQL](https://www.postgresql.org/download/)
 
 ### Installation
 
@@ -67,7 +67,7 @@ npm install
    Execute the tests using Jest:
 
 ```sh
-npm test
+npm run test
 ```
 
 ### Endpoints
