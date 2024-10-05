@@ -75,6 +75,7 @@ class UserController {
     }
   }
 
+  //https://node-postgres.com/features/transactions
   public async createUserTransaction(
     req: Request,
     res: Response

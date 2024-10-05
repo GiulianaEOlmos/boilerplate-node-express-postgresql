@@ -4,9 +4,11 @@ This project is a basic template designed for interview purposes. It is built wi
 
 ## Getting Started
 
-Follow these instructions to get the project up and running on your local machine for development and testing purposes.
+Follow these steps to set up the project on your local machine for development and testing.
 
 ### Prerequisites
+
+Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [Docker](https://www.docker.com/get-started)
@@ -23,38 +25,38 @@ Follow these instructions to get the project up and running on your local machin
 
 ### Running Docker Compose
 
-This will help us to have our server and database running locally.
+Using Docker Compose will spin up both the server and the PostgreSQL database locally, allowing you to test and develop in an isolated environment.
 
-1. **Build Docker Compose**:
+1. **Build the Docker containers**:
 
    ```sh
    docker-compose build
    ```
 
-2. **Start Docker Compose**:
+2. **Start the containers:**:
 
    ```sh
    docker-compose up
    ```
 
-### Down Docker compose
+### Stopping Docker Compose:
 
-a. **Simple Down**:
+a. **Stop the containers but keep the data intact:**:
 
 ```sh
 docker-compose down
 ```
 
-b. **Down the docker compose AND delete the volume**:
+b. **Stop the containers and remove the data:**:
 This action will remove all the data you've added to the database. If you want to keep working with the same data, do not delete the volume. Alternatively, you should ensure the data is re-added by including it in the initial script that runs when the database starts (these scripts are located in the `sql` folder).
 
 ```sh
 docker-compose down -v
 ```
 
-### Test
+### Running Tests
 
-To run the tests for this project, follow these steps:
+This project includes a basic test setup with Jest. Follow these steps to run the tests:
 
 1. **Install Dependencies:**
    Ensure all dependencies are installed. If you haven't done this yet, run:
@@ -77,13 +79,13 @@ npm run test
   - `GET /users/:id`: Retrieve a user by ID
   - `PUT /users/:id`: Update a user by ID
   - `DELETE /users/:id`: Delete a user by ID
-  - `GET /users`: Get all the users
-  - `POST /usersTransaction`: Add users as transaction => An example to implement transactions if are needed.
+  - `GET /users`: Retrieve all users
+  - `POST /usersTransaction`: Add users as a transaction (an example of how to implement transactions if needed)
 
 ### BLOG
 
-I write about the process to create this boilerplate in this post:
+If you're interested in learning more about how I built this boilerplate, check out my blog post where I explain the process step-by-step:
 
 ### READMEforProject
 
-The template for the readme that your project should use.
+If you're using this boilerplate as a starting point, I encourage you to create your own version that suits your specific needs. You can adapt this README.md template for your project to provide detailed instructions to your users.
